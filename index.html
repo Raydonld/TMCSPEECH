@@ -116,8 +116,15 @@
 
 
   <section class="section">
-    <div class="container is-max-desktop">
+    <div class="container hero-body">
       <h2 class="title is-4">The TMCSPEECH dataset</h2>
+      <p>
+        We obtained 783 movies and 3 TV shows from YouTube and conducted data extraction using the multi-modal
+        extraction pipeline we proposed. We will release the TMCSPEECH dataset upon the acceptance of our paper by ICME
+        2024. The dataset statistics and samples are as follows:
+      </p>
+      <br>
+
       <h3 class="title is-5">Dataset Statistics</h3>
       <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
         <thead>
@@ -143,38 +150,193 @@
           </tr>
         </tbody>
       </table>
-    </div>
-  </section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
       <div class="columns is-centered">
-
-        <!-- Figure: Duration Group -->
+        <!-- Figure: TV show Duration -->
         <div class="column">
           <div class="content">
-            <h2 class="title is-5">Duration by Group</h2>
+            <!-- <h2 class="title is-5">Duration by Group</h2> -->
             <figure>
-              <img src="img/duration_group.png" alt="Duration by Group">
+              <img src="img/tvshow_duration_distribution.jpg" style="width:450px; height:322px">
             </figure>
           </div>
         </div>
-        <!--/ Duration Group -->
+        <!--/ Duration -->
 
-        <!-- Figure: Duration Gender -->
+        <!-- Figure:  Movie Duration -->
         <div class="column">
           <div class="content">
-            <h2 class="title is-5">Duration by Gender</h2>
+            <!-- <h2 class="title is-5">Duration by Gender</h2> -->
             <figure>
-              <img src="img/duration_gender.png" alt="Duration by Gender">
+              <img src="img/movie_duration_distribution.jpg" style="width:450px; height:322px">
             </figure>
           </div>
         </div>
         <!--/ Duration Gender -->
-
       </div>
+
+      <!-- Dataset Demo -->
+      <h3 class="title is-5">Dataset Demo</h3>
+      <table>
+        <tbody>
+          <tr style="border-bottom: 1px solid black;">
+            <td style="text-align: center; vertical-align: middle; width: 100px;" rowspan=1><strong>Video
+                Type<strong>
+            <td style="text-align: center; vertical-align: middle; width: 200px;" rowspan=1><strong>Video
+                Name<strong>
+            </td>
+            <td style="text-align: center; vertical-align: middle; width: 100px;" rowspan=1><strong>Character
+                Name<strong></td>
+            <td style="text-align: center; vertical-align: middle; width: 500px;" rowspan=1><strong>Character
+                Description<strong></td>
+            <td style="text-align: center; vertical-align: middle; width: 300px;" rowspan=1><strong>Text<strong>
+            </td>
+            <td style="text-align: center; vertical-align: middle; width: 300px;" rowspan=1><strong>Audio<strong></td>
+            <td style="text-align: center; vertical-align: middle; width: 400px;" rowspan=1><strong>Video
+                Source<strong></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid black;">
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>Movie</strong></td>
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>被光抓走的人</strong><br>Gone With The
+              Light</td>
+            <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>武文学</strong><br>WenxueWu</td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>他是一位四十岁左右的中年男性，体态略显臃肿，身高不算太高，眉头紧锁，给人一种沉稳又忧虑的感觉。他的性格内向，不太善于表达自己的情感，但内心深处却有着强烈的责任感和家庭观念，不断努力着为自己所爱的人创造更美好的生活。</strong>
+              <br>
+              He is a middle-aged man around forty, with a slightly bulky build and average height. His furrowed brow
+              gives off an air of steadiness mixed with concern. His personality is introverted, not particularly adept
+              at expressing emotions, but deep inside, he holds a strong sense of responsibility and family values.
+              Continuously striving, he works hard to create a better life for those he cares about.
+            </td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>那那那些其他班消失的同学呢。</strong>
+              <br>
+              What about the missing kids from the other classes.
+
+            </td>
+            <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                preload="none" src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_351.wav"></audio></td>
+            <td style="text-align: left">
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/WuWUUGXcaV0?start=1610">
+              </iframe>
+            </td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid black;">
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>Movie</strong></td>
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>大太监李莲英</strong><br>Li Lian
+              Ying,The Imperial Eunch</td>
+            <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>慈禧</strong><br>Xi Ci</td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>该角色是一位老年女性，体态丰满，高大而庄重。她的面容严肃，眼神犀利，让人不敢直视。她的性格冷酷无情，善于权谋，常常令人无法琢磨。她是清朝末期的重要人物，手握大权，对人民命运具有巨大影响。</strong>
+              <br>
+              This character is an elderly woman with a full figure, tall and dignified. Her countenance is stern, and
+              her gaze is sharp, making people hesitant to meet her eyes. Her personality is ruthless and adept at
+              political maneuvering, often leaving others unable to fathom her intentions. She is a significant figure
+              during the late Qing Dynasty, holding considerable power and wielding a profound influence over the
+              destiny of the people.
+            </td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>那个隔辈的人再把同治皇后请出来垂帘听政。</strong>
+              <br>
+              The person of the next generation then invited the Empress Dowager Tongzhi to come out and rule by means
+              of a curtain.
+            </td>
+            <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                preload="none" src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_22.wav"></audio></td>
+            <td style="text-align: left">
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/SA4zpu2ZSMs?start=109">
+              </iframe>
+            </td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid black;">
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>Movie</strong></td>
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>大太监李莲英</strong><br>Li Lian
+              Ying,The Imperial Eunch</td>
+            <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>李莲英</strong><br>Lianying Li</td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>该角色是一位年约五十的中年男性，身材高大健硕，面容深邃，浓密的眉毛下是一双犀利的眼睛。他性格沉稳，深沉内敛，不轻易表露情感。身为太监，他看惯了宫廷斗争，善于察言观色，处理事务圆滑得体，深受皇室信任。</strong>
+              <br>
+              This character is a middle-aged man around fifty, with a tall and robust stature. His face is deep-set,
+              and beneath thick eyebrows lie sharp eyes. He possesses a composed and reserved personality, rarely
+              revealing his emotions. As a eunuch, he is accustomed to the intrigues of the court, adept at
+              understanding words and observing expressions. Skillful in handling affairs smoothly and gracefully, he
+              has earned the trust of the royal family.
+            </td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>太后的意思是要把这个山海好好修上一修。</strong>
+              <br>
+              The empress dowager means to repair this Shanhai well.
+            </td>
+            <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                preload="none" src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_162.wav"></audio></td>
+            <td style="text-align: left">
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/SA4zpu2ZSMs?start=842">
+              </iframe>
+            </td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid black;">
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>TV Show</strong></td>
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>琅琊榜</strong><br>Nirvana in Fire
+            </td>
+            <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>梅长苏</strong><br>Changsu Mei</td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>他是一位年约三十的男性，身姿修长，清瘦而不失力量。他的眼眸深邃如海，透出沉稳与智慧。他的性格既冷静又坚韧，善于谋划，能屈能伸。他的外表看似文弱，但实则蕴藏着强大的内心力量。</strong>
+              <br>
+              He is a man around thirty, with a slender and lean figure that still carries strength. His eyes are deep,
+              akin to the sea, revealing a sense of calmness and wisdom. His personality is both composed and resilient,
+              adept at planning and adaptable to circumstances. While his outward appearance may seem delicate, it
+              conceals a powerful inner strength.
+            </td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>皇上一定会征询殿下的意见。</strong>
+              <br>
+              The emperor will definitely seek your advice.
+            </td>
+            <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                preload="none" src="sample/dataset/琅琊榜.第41集.4K简繁英软字幕珍藏版_1_616.wav"></audio></td>
+            <td style="text-align: left">
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/6yDchwBfFuE?start=2019">
+              </iframe>
+            </td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid black;">
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>TV Show</strong></td>
+            <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>甄嬛传</strong><br>Empresses in the
+              Palace</td>
+            <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>甄嬛</strong><br>Huan Zhen</td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>她是一位年轻的女性，身材苗条，容貌秀美。她的眼神明亮而犀利，透露出内心的聪慧和坚定。她的性格既温婉又坚强，善于应对各种宫廷斗争。在年轻的岁月里，她以她的美貌和智慧，成为了宫廷中一颗璀璨的明珠。</strong>
+              <br>
+              She is a young woman, slim and beautiful. Her eyes are bright and sharp, revealing inner intelligence and
+              determination. Her personality is both gentle and strong, adept at dealing with various court intrigues.
+              In her youthful years, she became a radiant pearl in the court, recognized for her beauty and
+              intelligence.
+            </td>
+            <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+              <strong>臣妾情愿自己受这个委屈。</strong>
+              <br>
+              I would rather suffer this grievance myself.
+            </td>
+            <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                preload="none"
+                src="sample/dataset/[DBD-Raws][后宫·甄嬛传][36][1080P][BDRip][HEVC-10bit][AC3]_1_701.wav"></audio></td>
+            <td style="text-align: left">
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/wcH6nllqxME?start=2310">
+              </iframe>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
     </div>
   </section>
+
 
 
   <section class="hero is-light is-small">
@@ -199,10 +361,16 @@
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>被光抓走的人<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>武文学<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>被光抓走的人</strong><br>Gone With
+                  The
+                  Light</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>武文学</strong><br>WenxueWu</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>他是一位四十岁左右的中年男性，体态略显臃肿，身高不算太高，满头白发，眉头紧锁，给人一种沉稳又忧虑的感觉。他的性格内向，不太善于表达自己的情感，但内心深处却有着强烈的责任感和家庭观念，不断努力着为自己所爱的人创造更美好的生活。</strong>
+                  <strong>他是一位四十岁左右的中年男性，体态略显臃肿，身高不算太高，眉头紧锁，给人一种沉稳又忧虑的感觉。他的性格内向，不太善于表达自己的情感，但内心深处却有着强烈的责任感和家庭观念，不断努力着为自己所爱的人创造更美好的生活。</strong><br>He
+                  is a middle-aged man around forty, with a slightly bulky build and average height. His furrowed brow
+                  gives off an air of steadiness mixed with concern. His personality is introverted, not particularly
+                  adept at expressing emotions, but deep inside, he holds a strong sense of responsibility and family
+                  values. Continuously striving, he works hard to create a better life for those he cares about.
                 </td>
                 <!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
@@ -210,343 +378,460 @@
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_351.wav"></audio><br>那那那些其他班消失的同学呢。
-                      </td>
+                          src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_351.wav"></audio><br><strong>那那那些其他班消失的同学呢。</strong><br>What
+                        about the missing kids from the other classes.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_625.wav"></audio><br>我觉得这个挺不科学的。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_625.wav"></audio><br><strong>我觉得这个挺不科学的。</strong><br>I
+                        think it's pretty unscientific.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_810.wav"></audio><br>夫妻互相猜疑嘛。
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_824.wav"></audio><br>你们夫妻不也都留下了嘛。
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>超时空同居<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>谷小焦<strong></td>
-                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>她，一个生活在繁华都市中的现代女性，年约三十有余，身材修长而匀称，身高在一米七左右。她的长发如丝般顺滑，眼眸深邃，透露出聪慧与独立。她的穿着时尚而不失优雅，常常以一身简约的黑白配搭亮相。性格上，她独立、自主、有着强烈的自尊心和事业心，对待感情也极为认真和执着。</strong>
-                </td><!-- Transcriptions -->
-                <td style="text-align: left; padding: 15px;" rowspan=1>
-                  <table>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/超时空同居/谷小焦/超时空同居_1_32.wav"></audio><br>一百平的大草坪啊。
-                      </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/超时空同居/谷小焦/超时空同居_1_200.wav"></audio><br>你开门是九九年。
-                      </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/超时空同居/谷小焦/超时空同居_1_205.wav"></audio><br>我开门是二零一八年。
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/超时空同居/谷小焦/超时空同居_1_281.wav"></audio><br>我实在是没钱租房子了。
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>超时空同居<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>陆鸣<strong></td>
-                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>他是一位年约三十有余的男士，中等身高，身材偏瘦。他的脸庞有着分明的轮廓，双眸深邃而明亮。他的性格内向，略显羞涩，但同时又充满了对未来的期待和探索精神。他总是默默耕耘，为了自己的梦想而奋斗，从不轻易放弃。</strong>
-                </td><!-- Transcriptions -->
-                <td style="text-align: left; padding: 15px;" rowspan=1>
-                  <table>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/超时空同居/陆鸣/超时空同居_1_423.wav"></audio><br>那是我自己设计的。
-                      </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/超时空同居/陆鸣/超时空同居_1_427.wav"></audio><br>你不怕我揭发你吗。
-                      </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/超时空同居/陆鸣/超时空同居_1_733.wav"></audio><br>今年不九九年吗。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_810.wav"></audio><br><strong>夫妻互相猜疑嘛。</strong><br>Couples
+                        are suspicious of each other.</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/超时空同居/陆鸣/超时空同居_1_965.wav"></audio><br>而且我每天以后我都默念，远离姓谷的女人给未来的我心理暗示。
-                      </td>
+                          src="sample/training_data/被光抓走的人/武文学/被光抓走的人_1_824.wav"></audio><br><strong>你们夫妻不也都留下了嘛。</strong><br>You
+                        and your husband stayed, too.</td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>春光灿烂猪八戒<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>小龙女<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>超时空同居</strong><br>How Long
+                  Will I
+                  Love U</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>谷小焦</strong><br>Xiaojiao Gu
+                </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>她是一位年轻的女孩，大约二十多岁，身材修长纤细，身高约为一米七。她有着柔顺的长发和清澈的眼眸，常常穿着轻盈的长裙。她的性格温柔善良，总是关心身边的人，并且有着强烈的正义感。她看起来柔弱，但实际上内心很坚强。</strong>
+                  <strong>她，一个生活在繁华都市中的现代女性，年约三十有余，身材修长而匀称，身高在一米七左右。她的长发如丝般顺滑，眼眸深邃，透露出聪慧与独立。她的穿着时尚而不失优雅，常常以一身简约的黑白配搭亮相。性格上，她独立、自主、有着强烈的自尊心和事业心，对待感情也极为认真和执着。</strong><br>She
+                  is a modern woman living in the bustling city, around thirty years old, with a slender and
+                  well-proportioned figure, standing at about 1.10 meters tall. Her long hair is smooth as silk, and her
+                  deep gaze reflects intelligence and independence. She dresses in a fashionable yet elegant manner,
+                  often
+                  appearing in simple black and white combinations. In terms of personality, she is independent,
+                  autonomous, with a strong sense of self-esteem and career ambition. She approaches relationships with
+                  seriousness and dedication.
                 </td><!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
                   <table>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_175.wav"></audio><br>明明就是土茯苓加何首乌。
-                      </td>
+                          src="sample/training_data/超时空同居/谷小焦/超时空同居_1_32.wav"></audio><br><strong>一百平的大草坪啊。</strong><br>A
+                        hundred square feet of lawn.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_237.wav"></audio><br>我叫小龙女。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/超时空同居/谷小焦/超时空同居_1_200.wav"></audio><br><strong>你开门是九九年。</strong><br>It
+                        was 1999 when you opened the door.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_383.wav"></audio><br>你刚刚怎么没站稳。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/超时空同居/谷小焦/超时空同居_1_205.wav"></audio><br><strong>我开门是二零一八年。</strong><br>I
+                        opened the door in 2018.</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_384.wav"></audio><br>我就什么都知道。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/超时空同居/谷小焦/超时空同居_1_281.wav"></audio><br><strong>我实在是没钱租房子了。</strong><br>I
+                        just can't afford to rent an apartment.</td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>从你的全世界路过<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>陈末<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>超时空同居</strong><br>How Long
+                  Will I
+                  Love U</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>陆鸣</strong><br>Ming Lu</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>他是一位年约三十有余的男性，身材修长，微微偏瘦。他的外貌俊朗，眼神深邃，流露出沉稳和从容。他的性格独立而坚韧，善于思考，不轻易表露内心的脆弱。他总是独来独往，但在关键时刻，他也能为了朋友挺身而出，义无反顾。</strong>
-                </td><!-- Transcriptions -->
-                <td style="text-align: left; padding: 15px;" rowspan=1>
-                  <table>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_88.wav"></audio><br>这是我表弟叫茅十八。
-                      </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none"
-                          src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_207.wav"></audio><br>你觉得你这个怀疑有道理吗？</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none"
-                          src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_425.wav"></audio><br>看这位女子颧骨突出。
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none"
-                          src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_506.wav"></audio><br>如果你在生活当中做了一个错误的决定。
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>从你的全世界路过<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>幺鸡<strong></td>
-                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>一位娇小纤细的女性，年龄大约在二十五岁左右，身高不太高，给人一种柔弱的感觉。她的性格比较内向，但又不失坚强和独立，总是默默地为自己和身边的人付出。她的外貌清秀可人，长发披肩，眼神中透着一股温柔和善良。</strong>
+                  <strong>他是一位年约三十有余的男士，中等身高，身材偏瘦。他的脸庞有着分明的轮廓，双眸深邃而明亮。他的性格内向，略显羞涩，但同时又充满了对未来的期待和探索精神。他总是默默耕耘，为了自己的梦想而奋斗，从不轻易放弃。</strong><br>He
+                  is a gentleman in his early thirties, of average height, and with a slender build. His face features
+                  distinct contours, and his deep, bright eyes stand out. His personality is introverted, somewhat shy,
+                  but at the same time filled with expectations for the future and a spirit of exploration. He quietly
+                  works towards his dreams, never easily giving up.
                 </td><!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
                   <table>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_225.wav"></audio><br>三十二岁都已经半截入土了。</td>
+                          src="sample/training_data/超时空同居/陆鸣/超时空同居_1_423.wav"></audio><br><strong>那是我自己设计的。</strong><br>I
+                        designed it myself.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_231.wav"></audio><br>就因为你一天到晚瞎琢磨。</td>
+                          src="sample/training_data/超时空同居/陆鸣/超时空同居_1_427.wav"></audio><br><strong>你不怕我揭发你吗?</strong><br>Aren't
+                        you afraid I'll expose you?</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_711.wav"></audio><br>世界上有趣的事情那么多。</td>
+                          src="sample/training_data/超时空同居/陆鸣/超时空同居_1_733.wav"></audio><br><strong>今年不九九年吗?</strong><br>Isn't
+                        it 1999?</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_230.wav"></audio><br>你知道自己为什么事业不成功吗？
-                      </td>
+                          src="sample/training_data/超时空同居/陆鸣/超时空同居_1_965.wav"></audio><br><strong>而且我每天以后我都默念，远离姓谷的女人给未来的我心理暗示。</strong><br>And
+                        every day from now on, I silently recite, keeping away from women with the surname 'Gu' as a
+                        psychological suggestion for my future self.</td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>大太监李莲英<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>慈禧<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>春光灿烂猪八戒</strong><br>Sunny
+                  Piggy
+                </td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>小龙女</strong><br>Dragon Girl
+                </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>该角色是一位老年女性，体态丰满，高大而庄重。她的面容严肃，眼神犀利，让人不敢直视。她的性格冷酷无情，善于权谋，常常令人无法琢磨。她是清朝末期的重要人物，手握大权，对人民命运具有巨大影响。</strong>
-                </td><!-- Transcriptions -->
+                  <strong>她是一位年轻的女孩，大约二十多岁，身材修长纤细，身高约为一米七。她有着柔顺的长发和清澈的眼眸，常常穿着轻盈的长裙。她的性格温柔善良，总是关心身边的人，并且有着强烈的正义感。她看起来柔弱，但实际上内心很坚强。</strong><br>She
+                  is a young girl, around twenty-something, with a slender and graceful figure, standing at about 1.10
+                  meters tall. She has smooth long hair and clear, expressive eyes, often dressed in flowing dresses.
+                  Her
+                  personality is gentle and kind; she is always caring for those around her and possesses a strong sense
+                  of justice. Although she may appear delicate, in reality, she has a resilient inner strength.
+                </td>
+                <!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
                   <table>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_14.wav"></audio><br>亲政不也得十好几年以后。
-                      </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_15.wav"></audio><br>这天下又这么兵荒马乱。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_175.wav"></audio><br><strong>明明就是土茯苓加何首乌。</strong><br>It's
+                        obviously Tuckahoe and Polygonum multiflorum.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_22.wav"></audio><br>那个隔辈的人再把同治皇后请出来垂帘听政。
-                      </td>
+                          src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_237.wav"></audio><br><strong>我叫小龙女。</strong><br>My
+                        name is Dragon Girl.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_383.wav"></audio><br><strong>你刚刚怎么没站稳。</strong><br>You
+                        just lost your footing.</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_53.wav"></audio><br>我希望新皇帝能像同治皇帝活着的时候一样。
-                      </td>
+                          src="sample/training_data/春光灿烂猪八戒/小龙女/春光灿烂猪八戒_1_384.wav"></audio><br><strong>我就什么都知道。</strong><br>I
+                        know everything.</td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>大太监李莲英<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>李莲英<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>从你的全世界路过</strong><br>I
+                  Belonged
+                  to You</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>陈末</strong><br>Mo Chen</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>该角色是一位年约五十的中年男性，身材高大健硕，面容深邃，浓密的眉毛下是一双犀利的眼睛。他性格沉稳，深沉内敛，不轻易表露情感。身为太监，他看惯了宫廷斗争，善于察言观色，处理事务圆滑得体，深受皇室信任。</strong>
-                </td><!-- Transcriptions -->
+                  <strong>他是一位年约三十有余的男性，身材修长，微微偏瘦。他的外貌俊朗，眼神深邃，流露出沉稳和从容。他的性格独立而坚韧，善于思考，不轻易表露内心的脆弱。他总是独来独往，但在关键时刻，他也能为了朋友挺身而出，义无反顾。</strong><br>He
+                  is a man in his early thirties, with a slender and slightly lean physique. His handsome appearance,
+                  deep
+                  gaze, and composed demeanor give off an air of calmness. His personality is independent and resilient,
+                  adept at contemplation without easily revealing inner vulnerability. He tends to be solitary, yet in
+                  crucial moments, he can step forward for friends without hesitation, displaying unwavering loyalty.
+                </td>
+                <!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
                   <table>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_162.wav"></audio><br>太后的意思是要把这个山海好好修上一修。
-                      </td>
+                          src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_88.wav"></audio><br><strong>这是我表弟叫茅十八。</strong><br>This
+                        is my cousin named MAO Eighteen.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_40.wav"></audio><br>从小处说奴才可以为您再尽这份孝心。</td>
+                          src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_207.wav"></audio><br><strong>你觉得你这个怀疑有道理吗？</strong><br>Do
+                        you think your suspicion is justified?</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_159.wav"></audio><br>大婚之后呢就得亲政。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_425.wav"></audio><br><strong>看这位女子颧骨突出。</strong><br>Look
+                        at this woman with prominent cheekbones.</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_163.wav"></audio><br>这次派我随七爷来北洋水师。
-                      </td>
+                          src="sample/training_data/从你的全世界路过/陈末/从你的全世界路过_1_506.wav"></audio><br><strong>如果你在生活当中做了一个错误的决定。</strong><br>If
+                        you make a bad decision in your life.</td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>独行月球<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>马蓝星<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>从你的全世界路过</strong><br>I
+                  Belonged
+                  to You</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>幺鸡</strong><br>Ji Yao</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>这位女性角色年约三十余岁，身材修长，身高约一百七十厘米。她剪着短发，显得干练利落。她的性格坚韧不拔，冷静沉着，善于应对各种复杂情况。她是一位极具领导才能的探险家，不畏艰难险阻，勇往直前，带领团队向未知领域进发。</strong>
+                  <strong>一位娇小纤细的女性，年龄大约在二十五岁左右，身高不太高，给人一种柔弱的感觉。她的性格比较内向，但又不失坚强和独立，总是默默地为自己和身边的人付出。她的外貌清秀可人，长发披肩，眼神中透着一股温柔和善良。</strong><br>A
+                  petite and slender woman, approximately around twenty-five years old, with a not-so-tall stature,
+                  giving
+                  off a delicate impression. Her personality is rather introverted but not lacking in strength and
+                  independence; she silently sacrifices for herself and those around her. With a charming appearance,
+                  shoulder-length hair, and eyes that radiate gentleness and kindness, she is a quietly amiable
+                  presence.
                 </td><!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
                   <table>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/独行月球/马蓝星/独行月球_1_240.wav"></audio><br>地球的科技水平倒退成这样。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_225.wav"></audio><br><strong>三十二岁都已经半截入土了。</strong><br>"I
+                        am only thirty-two years old, but I feel like half of my life is already over."</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/独行月球/马蓝星/独行月球_1_755.wav"></audio><br>通过月面地标跟踪独孤月的行车路线。
-                      </td>
+                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_231.wav"></audio><br><strong>就因为你一天到晚瞎琢磨。</strong><br>Because
+                        you've been thinking about it all day.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/独行月球/马蓝星/独行月球_1_756.wav"></audio><br>确保独孤月和探月狗能够相遇。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_711.wav"></audio><br><strong>世界上有趣的事情那么多。</strong><br>There
+                        are so many interesting things in the world.</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/独行月球/马蓝星/独行月球_1_779.wav"></audio><br>宇航服的户外活动时间是五个小时。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/从你的全世界路过/幺鸡/从你的全世界路过_1_230.wav"></audio><br><strong>你知道自己为什么事业不成功吗？</strong><br>Do
+                        you know why you haven't been successful in your career?</td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>飞驰人生<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>张驰<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>大太监李莲英</strong><br>Li Lian
+                  Ying,The Imperial Eunch</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>慈禧</strong><br>Xi Ci</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>他是一位年约四十的中年男性，高大而健壮，肌肉结实，身材修长，留着一头短发。他的面容棱角分明，目光锐利，透露出一种不屈的精神。他有着坚毅的性格，面对困难从不轻易放弃，而是顽强地奋斗，不断超越自我。</strong>
+                  <strong>该角色是一位老年女性，体态丰满，高大而庄重。她的面容严肃，眼神犀利，让人不敢直视。她的性格冷酷无情，善于权谋，常常令人无法琢磨。她是清朝末期的重要人物，手握大权，对人民命运具有巨大影响。</strong><br>This
+                  character is an elderly woman with a full figure, tall and dignified. Her countenance is stern, and
+                  her
+                  gaze is sharp, making people hesitant to meet her eyes. Her personality is ruthless and adept at
+                  political maneuvering, often leaving others unable to fathom her intentions. She is a significant
+                  figure
+                  during the late Qing Dynasty, holding considerable power and wielding a profound influence over the
+                  destiny of the people.
                 </td><!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
                   <table>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/飞驰人生/张驰/飞驰人生_1_272.wav"></audio><br>会破坏极限状态的汽车平衡。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_14.wav"></audio><br><strong>亲政不也得十好几年以后。</strong><br>Direct
+                        governance will also take more than ten years.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/飞驰人生/张驰/飞驰人生_1_60.wav"></audio><br>大家不要原谅我。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_15.wav"></audio><br><strong>这天下又这么兵荒马乱。</strong><br>There's
+                        so much chaos in the world.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/飞驰人生/张驰/飞驰人生_1_179.wav"></audio><br>有什么问题吗。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_22.wav"></audio><br><strong>那个隔辈的人再把同治皇后请出来垂帘听政。</strong><br>The
+                        person of the next generation then invited the Empress Dowager Tongzhi to come out and rule
+                        by means of a curtain.</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/飞驰人生/张驰/飞驰人生_1_895.wav"></audio><br>不留下吃口饭。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/大太监李莲英/慈禧/大太监李莲英_1_53.wav"></audio><br><strong>我希望新皇帝能像同治皇帝活着的时候一样。</strong><br>I
+                        hope the new emperor will be like the Tongzhi Emperor when he was alive.</td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>甲方乙方<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>姚远<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>大太监李莲英</strong><br>Li Lian
+                  Ying,The Imperial Eunch</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>李莲英</strong><br>Lianying Li
+                </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>他是一位年约四十的中年男性，身材高大健硕，微微有些发福。他的面庞棱角分明，一双深邃的眼睛透露出沉稳和睿智。他的性格温和而坚毅，总是能在困难面前保持冷静，并以其超凡的智慧和经验解决问题。他是一个值得信赖和依靠的人。</strong>
+                  <strong>该角色是一位年约五十的中年男性，身材高大健硕，面容深邃，浓密的眉毛下是一双犀利的眼睛。他性格沉稳，深沉内敛，不轻易表露情感。身为太监，他看惯了宫廷斗争，善于察言观色，处理事务圆滑得体，深受皇室信任。</strong><br>This
+                  character is a middle-aged man around fifty, with a tall and robust stature. His face is deep-set, and
+                  beneath thick eyebrows lie sharp eyes. He possesses a composed and reserved personality, rarely
+                  revealing his emotions. As a eunuch, he is accustomed to the intrigues of the court, adept at
+                  understanding words and observing expressions. Skillful in handling affairs smoothly and gracefully,
+                  he
+                  has earned the trust of the royal family.
                 </td><!-- Transcriptions -->
                 <td style="text-align: left; padding: 15px;" rowspan=1>
                   <table>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/甲方乙方/姚远/甲方乙方_1_294.wav"></audio><br>我猜您一定是一位训练有素的记者。
-                      </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid black;">
-                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/甲方乙方/姚远/甲方乙方_1_326.wav"></audio><br>然后连夜审讯逼供，严刑拷打。
-                      </td>
+                          preload="none"
+                          src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_162.wav"></audio><br><strong>太后的意思是要把这个山海好好修上一修。</strong><br>The
+                        empress dowager means to repair this Shanhai well.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid black;">
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
                           preload="none"
-                          src="sample/training_data/甲方乙方/姚远/甲方乙方_1_655.wav"></audio><br>把别人的欢乐建筑在自己的痛苦之上的工作，是把爱和欢乐传播到人间的天使。
-                      </td>
+                          src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_40.wav"></audio><br><strong>从小处说奴才可以为您再尽这份孝心。</strong><br>From
+                        a small point of view, the slave can do this filial piety for you again.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_159.wav"></audio><br><strong>大婚之后呢就得亲政。</strong><br>After
+                        the grand wedding, it will be time for direct governance.</td>
                     </tr>
                     <tr>
                       <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
-                          preload="none" src="sample/training_data/甲方乙方/姚远/甲方乙方_1_758.wav"></audio><br>知道这受气的滋味不好受。</td>
+                          preload="none"
+                          src="sample/training_data/大太监李莲英/李莲英/大太监李莲英_1_163.wav"></audio><br><strong>这次派我随七爷来北洋水师。</strong><br>This
+                        time, I was assigned to accompany Seventh Prince to the Beiyang Fleet.</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid black;">
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>独行月球</strong><br>Moon Man
+                </td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>马蓝星</strong><br>Lanxing Ma
+                </td>
+                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+                  <strong>这位女性角色年约三十余岁，身材修长，身高约一百七十厘米。她剪着短发，显得干练利落。她的性格坚韧不拔，冷静沉着，善于应对各种复杂情况。她是一位极具领导才能的探险家，不畏艰难险阻，勇往直前，带领团队向未知领域进发。</strong><br>This
+                  female character is in her early thirties, with a slender and tall figure, standing at approximately
+                  170
+                  centimeters. She sports a short haircut, giving her a sharp and practical appearance. Her personality
+                  is
+                  tenacious, calm, and adept at handling complex situations. She is an adventurous leader with
+                  exceptional
+                  leadership skills, unafraid of difficulties and obstacles. Fearlessly, she leads her team forward into
+                  unknown territories.
+                </td><!-- Transcriptions -->
+                <td style="text-align: left; padding: 15px;" rowspan=1>
+                  <table>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/独行月球/马蓝星/独行月球_1_240.wav"></audio><br><strong>地球的科技水平倒退成这样。</strong><br>The
+                        technological level of the earth has gone backwards.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/独行月球/马蓝星/独行月球_1_755.wav"></audio><br><strong>通过月面地标跟踪独孤月的行车路线。</strong><br>Track
+                        Dugu Yue's driving path through lunar landmarks.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/独行月球/马蓝星/独行月球_1_756.wav"></audio><br><strong>确保独孤月和探月狗能够相遇。</strong><br>Make
+                        sure Dugu Yue and the moon-exploring dog can meet.</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/独行月球/马蓝星/独行月球_1_779.wav"></audio><br><strong>宇航服的户外活动时间是五个小时。</strong><br>The
+                        suit's outdoor activity time is five hours.</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid black;">
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>飞驰人生</strong><br>Pegasus</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>张驰</strong><br>Chi Zhang</td>
+                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+                  <strong>他是一位年约四十的中年男性，高大而健壮，肌肉结实，身材修长，留着一头短发。他的面容棱角分明，目光锐利，透露出一种不屈的精神。他有着坚毅的性格，面对困难从不轻易放弃，而是顽强地奋斗，不断超越自我。</strong><br>He
+                  is a middle-aged man around forty, tall and robust, with well-defined muscles and a tall and sturdy
+                  physique. His short hair complements his strong and determined appearance. His facial features are
+                  sharp, and his gaze is piercing, reflecting an indomitable spirit. With a resolute personality, he
+                  never
+                  easily gives up in the face of challenges. Instead, he tenaciously fights on, constantly pushing
+                  himself
+                  to surpass his own limits.
+                </td><!-- Transcriptions -->
+                <td style="text-align: left; padding: 15px;" rowspan=1>
+                  <table>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/飞驰人生/张驰/飞驰人生_1_272.wav"></audio><br><strong>会破坏极限状态的汽车平衡。</strong><br>It
+                        disrupts the balance of the car in its limit state.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/飞驰人生/张驰/飞驰人生_1_60.wav"></audio><br><strong>大家不要原谅我。</strong><br>Don't
+                        forgive me.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/飞驰人生/张驰/飞驰人生_1_179.wav"></audio><br><strong>有什么问题吗。</strong><br>What's
+                        the problem?</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/飞驰人生/张驰/飞驰人生_1_895.wav"></audio><br><strong>不留下吃口饭。</strong><br>Not
+                        staying to eat.</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid black;">
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>甲方乙方</strong><br>The Dream
+                  Factory</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>姚远</strong><br>Yuan Yao</td>
+                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+                  <strong>他是一位年约四十的中年男性，身材高大健硕，微微有些发福。他的面庞棱角分明，一双深邃的眼睛透露出沉稳和睿智。他的性格温和而坚毅，总是能在困难面前保持冷静，并以其超凡的智慧和经验解决问题。他是一个值得信赖和依靠的人。</strong><br>He
+                  is a middle-aged man around forty, with a tall and robust stature, slightly showing signs of
+                  robustness.
+                  His face has well-defined features, and a pair of deep eyes exude a sense of calmness and wisdom. His
+                  personality is gentle yet resolute, always maintaining composure in the face of challenges. With
+                  extraordinary intelligence and experience, he adeptly solves problems. He is someone reliable and
+                  trustworthy, worthy of reliance and dependence.
+                </td><!-- Transcriptions -->
+                <td style="text-align: left; padding: 15px;" rowspan=1>
+                  <table>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/甲方乙方/姚远/甲方乙方_1_294.wav"></audio><br><strong>我猜您一定是一位训练有素的记者。</strong><br>I
+                        suppose you must be a trained journalist.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/甲方乙方/姚远/甲方乙方_1_326.wav"></audio><br><strong>然后连夜审讯逼供，严刑拷打。</strong><br>Then
+                        they would conduct interrogation and torture the suspects overnight.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/甲方乙方/姚远/甲方乙方_1_655.wav"></audio><br><strong>把别人的欢乐建筑在自己的痛苦之上的工作，是把爱和欢乐传播到人间的天使。</strong><br>The
+                        work of building the joy of others over one's own pain is the angel who spreads love and joy
+                        to the world.</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left; padding: 15px;" rowspan=1><audio style="width: 500px;" controls=""
+                          preload="none"
+                          src="sample/training_data/甲方乙方/姚远/甲方乙方_1_758.wav"></audio><br><strong>知道这受气的滋味不好受。</strong><br>I
+                        know it's not easy to be treated like this.</td>
                     </tr>
                   </table>
                 </td>
@@ -564,6 +849,11 @@
 
         <!-- Experimental Results -->
         <h3 class="title is-5">2. Experimental Results</h3>
+        <p>
+          In our approach, you can input both the name of video and character, as well as generate voices using
+          character descriptions.
+        </p>
+        <br>
 
         <center>
           <table>
@@ -588,130 +878,191 @@
                     Voice-4<strong></td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>两宫皇太后<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>慈禧皇太后<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>两宫皇太后</strong><br>Two
+                  dowagers
+                </td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>慈禧皇太后</strong><br>Empress
+                  Dowager
+                  Cixi</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>该角色是一位年约五十余岁的女性，身材高大而端庄，体态丰满。她的面容严肃，有着锐利的眼神和紧闭的嘴唇，显示出她内向且权威的性格。她的长发被梳成了一个复杂的发髻，珠宝和华丽的服饰更突显了她的高贵和威严。</strong>
+                  <strong>该角色是一位年约五十余岁的女性，身材高大而端庄，体态丰满。她的面容严肃，有着锐利的眼神和紧闭的嘴唇，显示出她内向且权威的性格。她的长发被梳成了一个复杂的发髻，珠宝和华丽的服饰更突显了她的高贵和威严。</strong><br>This
+                  character is a woman of around fifty years old, with a tall and dignified stature, and a full figure.
+                  Her countenance is solemn, with sharp eyes and tightly closed lips, revealing an introverted and
+                  authoritative personality. Her long hair is styled into an intricate updo, and the jewelry and
+                  luxurious
+                  attire further emphasize her nobility and dignity.
                 </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>我早就说过这内廷是得整治一下。<strong>
+                  <strong>我早就说过这内廷是得整治一下。</strong><br>I have said that the internal court should be rectified.
                 </td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/慈禧皇太后/0.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/慈禧皇太后/1.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/慈禧皇太后/2.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/慈禧皇太后/3.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/慈禧皇太后/0.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/慈禧皇太后/1.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/慈禧皇太后/2.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/慈禧皇太后/3.wav"></audio></td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>两宫皇太后<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>嘉顺皇后<strong></td>
-                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>她是一位年约四十的女性，身姿高挑修长，微胖的体型透出一种雍容华贵的气质。她的面容端庄秀丽，双眸深邃明亮，透露出沉稳而又聪慧的性格特点。她的手指纤细，轻轻扶着华丽的凤冠，流露出母仪天下的威严和庄重。</strong>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>两宫皇太后</strong><br>Two
+                  dowagers
+                </td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>嘉顺皇后</strong><br>Empress
+                  Jiashun
                 </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>不过可别让皇上累坏了身子<strong>
+                  <strong>她是一位年约四十的女性，身姿高挑修长，微胖的体型透出一种雍容华贵的气质。她的面容端庄秀丽，双眸深邃明亮，透露出沉稳而又聪慧的性格特点。她的手指纤细，轻轻扶着华丽的凤冠，流露出母仪天下的威严和庄重。</strong><br>She
+                  is a woman around forty, with a tall and slender figure, and a slightly plump physique exuding an air
+                  of
+                  grace and elegance. Her countenance is dignified and beautiful, with deep and bright eyes reflecting a
+                  calm and intelligent character. Her fingers are delicate, gently supporting an ornate phoenix crown,
+                  emanating an imposing and solemn maternal authority.
                 </td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/嘉顺皇后/0.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/嘉顺皇后/1.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/嘉顺皇后/2.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/两宫皇太后/嘉顺皇后/3.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+                  <strong>不过可别让皇上累坏了身子。</strong><br>But don't let the emperor wear himself out.
+                </td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/嘉顺皇后/0.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/嘉顺皇后/1.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/嘉顺皇后/2.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/两宫皇太后/嘉顺皇后/3.wav"></audio></td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>杨门女将之军令如山<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>穆桂英<strong></td>
-                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>她是一位年约三十的女性，身姿高大挺拔，体态修长而不失力量，身高约在一米七左右。她的外貌清秀端庄，眉眼间透着一股英气，让人不禁肃然起敬。她性格坚毅果敢，善于领兵作战，遇到困难总能镇定应对，是众人心中的楷模。</strong>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1>
+                  <strong>杨门女将之军令如山</strong><br>Legendary
+                  Amazons
+                </td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>穆桂英</strong><br>Guiying Mu
                 </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>将军队化整为零。<strong>
+                  <strong>她是一位年约三十的女性，身姿高大挺拔，体态修长而不失力量，身高约在一米七左右。她的外貌清秀端庄，眉眼间透着一股英气，让人不禁肃然起敬。她性格坚毅果敢，善于领兵作战，遇到困难总能镇定应对，是众人心中的楷模。</strong><br>She
+                  is a woman around thirty, tall and upright, with a well-proportioned and powerful physique, standing
+                  at
+                  about 1.7 meters tall. Her appearance is elegant and dignified, with a noble air in her brows and
+                  eyes,
+                  evoking a sense of respect. Her personality is resolute and decisive, adept at leading troops into
+                  battle. In the face of difficulties, she always remains calm and composed, serving as a role model in
+                  the hearts of many.
                 </td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/杨门女将之军令如山/穆桂英/0.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/杨门女将之军令如山/穆桂英/1.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/杨门女将之军令如山/穆桂英/2.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/杨门女将之军令如山/穆桂英/3.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+                  <strong>将军队化整为零。</strong><br>Turn the military into pieces.
+                </td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/杨门女将之军令如山/穆桂英/0.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/杨门女将之军令如山/穆桂英/1.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/杨门女将之军令如山/穆桂英/2.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/杨门女将之军令如山/穆桂英/3.wav"></audio></td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>小时代<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>林萧<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>小时代</strong><br>Tiny Times
+                  1.0
+                </td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>林萧</strong><br>Xiao Lin</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>她，一位年约二十五岁的女性，身姿纤细轻盈，身高约一百六十五厘米。她的长发如丝般顺滑，眼眸宛如深邃的湖泊。性格上，她是个温柔善良的女孩，略带一丝忧郁的气质。她的外表看似柔弱，但内心充满了坚韧和勇气，面对困难从不轻易放弃。</strong>
+                  <strong>她，一位年约二十五岁的女性，身姿纤细轻盈，身高约一百六十五厘米。她的长发如丝般顺滑，眼眸宛如深邃的湖泊。性格上，她是个温柔善良的女孩，略带一丝忧郁的气质。她的外表看似柔弱，但内心充满了坚韧和勇气，面对困难从不轻易放弃。</strong><br>She
+                  is a woman around twenty-five, with a slender and graceful figure, standing at about 165 centimeters
+                  tall. Her long hair is as smooth as silk, and her eyes resemble deep, serene lakes. In terms of
+                  personality, she is a gentle and kind girl, with a hint of melancholy in her demeanor. Despite her
+                  seemingly delicate appearance, her heart is filled with resilience and courage, and she never easily
+                  gives up in the face of difficulties.
                 </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>我反而从心底理解南湘了。<strong>
+                  <strong>我反而从心底理解南湘了。</strong><br>On the contrary, I understood Nanxiang from the bottom of my heart.
                 </td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/小时代/林萧/0.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/小时代/林萧/1.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/小时代/林萧/2.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/小时代/林萧/3.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/小时代/林萧/0.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/小时代/林萧/1.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/小时代/林萧/2.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/小时代/林萧/3.wav"></audio></td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>车在囧途<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>严小莲<strong></td>
-                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>这位女性角色年约三十，身材苗条，身高适中。她的长发披肩，眼眸中透出一股聪慧和机巧。性格上，她是个活泼开朗的人，善于应对各种突发状况，同时也是个有责任心的人，对待自己的任务总是尽心尽力，不轻言放弃。</strong>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>车在囧途</strong><br>The
+                  Unfortunate
+                  Car</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>严小莲</strong><br>Xiaolian Yan
                 </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>你就在我们这安家吧。<strong>
+                  <strong>这位女性角色年约三十，身材苗条，身高适中。她的长发披肩，眼眸中透出一股聪慧和机巧。性格上，她是个活泼开朗的人，善于应对各种突发状况，同时也是个有责任心的人，对待自己的任务总是尽心尽力，不轻言放弃。</strong><br>This
+                  female character is around thirty, with a slender and well-proportioned figure, of moderate height.
+                  Her
+                  shoulder-length hair and bright eyes reveal a sense of cleverness and intelligence. Personality-wise,
+                  she is a lively and cheerful individual, adept at handling various unexpected situations.
+                  Additionally,
+                  she is a responsible person, always dedicating herself wholeheartedly to her tasks and not easily
+                  giving
+                  up.
                 </td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/车在囧途/严小莲/0.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/车在囧途/严小莲/1.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/车在囧途/严小莲/2.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/车在囧途/严小莲/3.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+                  <strong>你就在我们这安家吧。</strong><br>You can make your home here with us.
+                </td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/车在囧途/严小莲/0.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/车在囧途/严小莲/1.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/车在囧途/严小莲/2.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/车在囧途/严小莲/3.wav"></audio></td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>澳门风云<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>石一坚<strong></td>
-                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>他是一个高大挺拔的中年男性，身姿矫健，精神矍铄。岁月并未在他的脸上留下痕迹，反而增添了一份沉稳和从容。深邃的眼神透露出智慧和自信，微笑时嘴角微微上扬，给人一种亲切而温暖的感觉。他有着坚韧不拔的性格，面对困境总能从容应对。</strong>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>澳门风云</strong><br>The Man from
+                  Macau</td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>石一坚</strong><br>Yijian Shi
                 </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>你没斗过地主吗？<strong>
+                  <strong>他是一个高大挺拔的中年男性，身姿矫健，精神矍铄。岁月并未在他的脸上留下痕迹，反而增添了一份沉稳和从容。深邃的眼神透露出智慧和自信，微笑时嘴角微微上扬，给人一种亲切而温暖的感觉。他有着坚韧不拔的性格，面对困境总能从容应对。</strong><br>He
+                  is a tall and upright middle-aged man, with a vigorous and spirited demeanor. Time has not left any
+                  traces on his face; instead, it has added a touch of calmness and composure. The depth in his gaze
+                  reveals wisdom and self-assurance. When he smiles, the corners of his mouth gently curve upward,
+                  imparting a sense of warmth and friendliness. He possesses a resilient character, always able to face
+                  challenges with ease.
                 </td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/澳门风云/石一坚/0.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/澳门风云/石一坚/1.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/澳门风云/石一坚/2.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/澳门风云/石一坚/3.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
+                  <strong>你没斗过地主吗？</strong><br>You have not played against the landlord?
+                </td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/澳门风云/石一坚/0.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/澳门风云/石一坚/1.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/澳门风云/石一坚/2.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/澳门风云/石一坚/3.wav"></audio></td>
               </tr>
               <tr style="border-bottom: 1px solid black;">
-                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>人潮汹涌<strong></td>
-                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>周全<strong></td>
+                <td style="text-align: center; vertical-align: middle; " rowspan=1><strong>人潮汹涌</strong><br>End Game
+                </td>
+                <td style="text-align: center; vertical-align: middle;" rowspan=1><strong>周全</strong><br>Quan Zhou</td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>他是一个高大而结实的男性，年龄大约在四十岁左右，身高约为一米八。他有一头黑色的短发和浓密的胡须，让他看起来成熟而沉稳。他的性格非常谨慎，总是深思熟虑后才做出决定，同时也是一个非常有责任感的人，对自己的任务和义务非常认真。</strong>
+                  <strong>他是一个高大而结实的男性，年龄大约在四十岁左右，身高约为一米八。他有一头黑色的短发和浓密的胡须，让他看起来成熟而沉稳。他的性格非常谨慎，总是深思熟虑后才做出决定，同时也是一个非常有责任感的人，对自己的任务和义务非常认真。</strong><br>He
+                  is a tall and robust male, approximately around forty years old, standing at about 1.8 meters tall.
+                  With
+                  a head of black short hair and a thick beard, he exudes a mature and steady demeanor. His personality
+                  is
+                  highly cautious, always making decisions after careful consideration. Simultaneously, he is a very
+                  responsible individual, taking his tasks and obligations seriously.
                 </td>
                 <td style="text-align: center; vertical-align: middle; padding: 15px;" rowspan=1>
-                  <strong>听说你跟他挺不错的。<strong>
+                  <strong>听说你跟他挺不错的。</strong><br>I hear you're pretty good with him.
                 </td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/人潮汹涌/周全/0.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/人潮汹涌/周全/1.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/人潮汹涌/周全/2.wav"></audio></td>
-                <td style="text-align: left"><audio style="width: 150px;" controls="" preload="none"
-                    src="sample/testing_result/人潮汹涌/周全/3.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/人潮汹涌/周全/0.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/人潮汹涌/周全/1.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/人潮汹涌/周全/2.wav"></audio></td>
+                <td style="text-align: center; vertical-align: middle; "><audio style="width: 150px;" controls=""
+                    preload="none" src="sample/testing_result/人潮汹涌/周全/3.wav"></audio></td>
               </tr>
             </tbody>
           </table>
