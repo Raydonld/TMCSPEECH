@@ -41,12 +41,12 @@
   <nav id="floating-toc">
     <h2 class="title is-5" style="text-align: center;">Contents</h2>
     <ul id="toc">
-      <li><a href="#section1">Abstract</a></li>
-      <li><a href="#section2">Overview</a></li>
+      <!-- <li><a href="#section1">Abstract</a></li>
+      <li><a href="#section6">Download</a></li>
+      <li><a href="#section2">Overview</a></li> -->
       <li><a href="#section3">The TMCSPEECH dataset <sup>[v1]</sup></a></li>
       <li><a href="#section4">Training Data for the Prompt Encoder and the Normalizing Flow Model</a></li>
       <li><a href="#section5">Experimental Results</a></li>
-      <li><a href="#section6">Download</a></li>
     </ul>
     <button class="button is-info" id="backToTopBtn" onclick="scrollToTop()"
       style="margin-left: auto; margin-right: auto; display: flex;">
@@ -74,65 +74,9 @@
       </div>
     </section>
 
-
-    <section class="section">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-4" id="section1">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                Recent research on text-guided speech synthesis has sparked considerable interest. This study explores
-                the
-                potential of leveraging publicly available internet video data for speech synthesis and character-based
-                voice generation. We introduce a multi-modal extraction pipeline for automating the creation of speech
-                synthesis datasets, extracting accurate character speech segments and descriptions from online videos.
-                Additionally, we propose a person-description-based controllable voice synthesis system, establishing a
-                mapping from character descriptions to speaker representation vectors. This system transforms character
-                descriptions into new vectors, serving as input for zero-shot VITS to generate character-specific
-                voices.
-                Both objective and subjective metrics affirm our approach's capability to generate previously unheard
-                character-specific voices with acceptable naturalness. We will release the TMCSPEECH dataset generated
-                by
-                this pipeline. Our dataset and audio samples can be accessed online <a
-                  href="https://raydonld.github.io/TMCSPEECH/">https://raydonld.github.io/TMCSPEECH/</a> .
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <p>
-          <h1 class="title is-5" , style="color: red;">We only provide our collected original video links and our
-            annotated labels for non-commercial research purposes. Our shared annotation set does not contain any audio
-            or video data. It is the user's responsibility to decide whether to download the video data and whether
-            their intended purpose with the downloaded data is legal in their country.</h1>
-          </p>
-        </div>
-
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-4" id="section2">Overview</h2>
-            <h4 class="title is-5">The overview of our multi-modal extraction pipeline</h4>
-            <div class="content has-text-justified">
-              <img src="./img/fig_1.jpg" alt="The overview of our multi-modal extraction pipeline"
-                style="width: 100%;" />
-            </div>
-            <h4 class="title is-5">The architecture of our model</h4>
-            <div class="content has-text-justified">
-              <img src="./img/fig_2.jpg" alt=" Architecture of our model" style="width: 100%;" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <section class="section">
       <div class="container hero-body">
         <h2 class="title is-4" id="section3">The TMCSPEECH dataset <sup>[v1]</sup></h2>
-
         <p>
           We have successfully collected 783 movies and 3 TV shows from YouTube, and have utilized our proposed
           multi-modal extraction pipeline for data extraction. We plan to continue expanding this dataset. We will make
@@ -189,6 +133,30 @@
             </div>
           </div>
           <!--/ Duration Gender -->
+        </div>
+
+        <h2 class="title is-5" id="section6">Download</h2>
+        <div class="title is-6" , style="color: red;">
+          Researchers can gain access to the source video data through our provided video links. It is the user's
+          responsibility to decide whether to download the video data and whether their intended purpose with the
+          downloaded data is legal in their country.
+        </div>
+        <div class="content has-text-justified">
+          To obtain the video links and our annotations, please contact <b>dong.liu@dukekunshan.edu.cn</b> or
+          <b>ming.li369@dukekunshan.edu.cn</b> via your instutional e-mail along with your affiliation and intended use
+          of the
+          data. Thanks.
+        </div>
+
+
+        <h2 class="title is-5" id="section2">License</h2>
+        <div class="content has-text-justified">
+          <p>
+            The dataset is licensed under the <strong>CC BY-NC-SA 4.0</strong> license. This means that you can share
+            and adapt the
+            dataset for non-commercial purposes as long as you provide appropriate attribution and distribute your
+            contributions under the same license. Detailed terms can be found on <a href="./LICENSE">LICENSE</a>.
+          </p>
         </div>
 
         <!-- Dataset Demo -->
@@ -878,6 +846,25 @@
       </div>
     </section>
 
+    <!-- <section>
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-4" id="section2">Overview</h2>
+            <h4 class="title is-5">The overview of our multi-modal extraction pipeline</h4>
+            <div class="content has-text-justified">
+              <img src="./img/fig_1.jpg" alt="The overview of our multi-modal extraction pipeline"
+                style="width: 100%;" />
+            </div>
+            <h4 class="title is-5">The architecture of our model</h4>
+            <div class="content has-text-justified">
+              <img src="./img/fig_2.jpg" alt=" Architecture of our model" style="width: 100%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
     <section class="section">
       <div class="container hero-body">
 
@@ -1154,30 +1141,7 @@
 
     </section>
 
-    <section class="section">
-      <div class="container hero-body">
-        <h2 class="title is-2" id="section6">Download</h2>
-        <div class="content has-text-justified">
-          We only provide our collected original <b>video links</b> and <b>annotated labels</b> in the TMCSPEECH
-          dataset.
-          Researchers can gain access to the source video data by providing video links. To obtain the dataset, please
-          contact us via E-mail: dong.liu@dukekunshan.edu.cn or ming.li369@dukekunshan.edu.cn, along with your identity
-          and intended use of the data.
-        </div>
 
-
-        <h2 class="title is-3" id="section2">License</h2>
-        <div class="content has-text-justified">
-          <p>
-            The dataset is licensed under the <strong>CC BY-NC-SA 4.0</strong> license. This means that you can share
-            and adapt the
-            dataset for non-commercial purposes as long as you provide appropriate attribution and distribute your
-            contributions under the same license. Detailed terms can be found on <a href="./LICENSE">LICENSE</a>.
-          </p>
-        </div>
-
-      </div>
-    </section>
 
   </main>
 
